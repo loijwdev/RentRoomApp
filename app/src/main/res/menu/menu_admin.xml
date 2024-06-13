@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Quản lý người dùng"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/manageAcc"></item>
+    <item android:title="Quản lý phòng"
+        android:icon="@drawable/ic_baseline_house_24"
+        android:id="@+id/manageRoom"></item>
+    <item android:title="Quản lý chat"
+        android:icon="@drawable/baseline_chat_24"
+        android:id="@+id/manageChat"></item>
+    <item android:title="Tài khoản"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_outline_24"></item>
+</menu>

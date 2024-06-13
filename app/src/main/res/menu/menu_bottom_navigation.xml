@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Trang chủ"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home"></item>
+    <item android:title="Thêm tin"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:id="@+id/addRoom"></item>
+    <item android:title="Tìm kiếm phòng"
+        android:icon="@drawable/ic_baseline_manage_search_24"
+        android:id="@+id/findRoom"></item>
+    <item android:title="Danh sách yêu thích"
+        android:icon="@drawable/heart"
+        android:id="@+id/lstHeart"></item>
+    <item android:title="Tài khoản"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_outline_24"></item>
+</menu>

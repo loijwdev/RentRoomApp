@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imageRoom"
+                    android:layout_width="260dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:shape="rectangle"
+                    android:src="@android:drawable/alert_light_frame" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thêm ảnh chính"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Thông tin phòng"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtNameRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Tên phòng"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Mô tả"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Địa chỉ"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Diện tích"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/edtAmenities"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:completionThreshold="1"
+                    android:hint="Tiện ich"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtRule"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Quy tắc"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Chi phí"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Giá phòng"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtDepositMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Số tiền đặt cọc"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtElectricMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Tiền điện"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtWaterMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Tiền nước"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edtInternetMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Internet/Truyền hình cáp theo tháng"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/edtFeeParking"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Phí giữ xe tháng"
+                    android:paddingLeft="10dp" />
+                <!-- Your existing EditTexts -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_upload_img_room"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:backgroundTint="#DCC687"
+                    android:text="Chọn ảnh chi tiết"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/recyclerImageRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp">
+
+                <Button
+                    android:id="@+id/btnAddRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#DCC687"
+                    android:text="Thêm phòng" />
+
+                <Button
+                    android:id="@+id/btnDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#DCC687"
+                    android:text="Xem" />
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_name"
+                    android:layout_weight="1"
+                    android:text="Edit"
+                    android:backgroundTint="#DCC687"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <!-- Add your FrameLayout contents here -->
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView">
+        <!-- Add your FrameLayout contents here -->
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:menu="@menu/menu_bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
