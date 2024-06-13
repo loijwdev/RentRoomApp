@@ -1,2 +1,2 @@
-# Android_Final
+# RentRoomApp
 Mobile application for managing and renting rooms
